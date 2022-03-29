@@ -2,7 +2,7 @@
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import "./Suggestions.css";
-import {Admin} from "../Middleware.js";
+import { Admin } from "../Middleware.js";
 
 // import content from mui
 import { Container } from "@mui/material";
@@ -36,7 +36,7 @@ function Suggestions() {
     };
 
     let reqOptions = {
-      url: "http://localhost:8000/api/suggestions/",
+      url: "https://apipolysmash.herokuapp.com/api/suggestions/",
       method: "GET",
       mode: "no-cors",
       headers: headersList,
@@ -54,7 +54,7 @@ function Suggestions() {
         Autorization: localStorage.getItem("token"),
       };
       let reqOptions = {
-        url: "http://localhost:8000/api/suggestions",
+        url: "https://apipolysmash.herokuapp.com/api/suggestions",
         method: "post",
         mode: "no-cors",
         headers: headersList,

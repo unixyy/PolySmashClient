@@ -35,7 +35,7 @@ function News() {
         Autorization: localStorage.getItem("token"),
       };
       let reqOptions = {
-        url: "http://localhost:8000/api/news",
+        url: "https://apipolysmash.herokuapp.com/api/news",
         method: "post",
         mode: "no-cors",
         headers: headersList,
@@ -56,7 +56,7 @@ function News() {
     };
 
     let reqOptions = {
-      url: "http://localhost:8000/api/news/",
+      url: "https://apipolysmash.herokuapp.com/api/news/",
       method: "GET",
       mode: "no-cors",
       headers: headersList,

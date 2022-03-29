@@ -32,7 +32,7 @@ function Register() {
       Accept: "*/*",
     };
     let reqOptions = {
-      url: "http://localhost:8000/api/users/register",
+      url: "https://apipolysmash.herokuapp.com/api/users/register",
       method: "post",
       mode: "no-cors",
       headers: headersList,

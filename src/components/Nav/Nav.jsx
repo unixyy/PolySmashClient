@@ -35,7 +35,7 @@ function Navbar() {
       };
 
       let reqOptions = {
-        url: "http://localhost:8000/api/users/peruser",
+        url: "https://apipolysmash.herokuapp.com/api/users/peruser",
         method: "post",
         mode: "no-cors",
         headers: headersList,

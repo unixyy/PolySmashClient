@@ -36,7 +36,7 @@ function Store() {
     };
 
     let reqOptions = {
-      url: "http://localhost:8000/api/store/",
+      url: "https://apipolysmash.herokuapp.com/api/store/",
       method: "GET",
       mode: "no-cors",
       headers: headersList,
@@ -55,7 +55,7 @@ function Store() {
     };
 
     let reqOptions = {
-      url: "http://localhost:8000/api/users/peruser",
+      url: "https://apipolysmash.herokuapp.com/api/users/peruser",
       method: "post",
       mode: "no-cors",
       headers: headersList,
@@ -67,7 +67,7 @@ function Store() {
     });
     if (points >= datas.price) {
       reqOptions = {
-        url: "http://localhost:8000/api/store",
+        url: "https://apipolysmash.herokuapp.com/api/store",
         method: "delete",
         mode: "no-cors",
         headers: headersList,
@@ -78,7 +78,7 @@ function Store() {
       console.log(getUserEmail());
       console.log(datas.price);
       reqOptions = {
-        url: "http://localhost:8000/api/users/dec",
+        url: "https://apipolysmash.herokuapp.com/api/users/dec",
         method: "put",
         mode: "no-cors",
         headers: headersList,
@@ -100,7 +100,7 @@ function Store() {
         Autorization: localStorage.getItem("token"),
       };
       let reqOptions = {
-        url: "http://localhost:8000/api/store",
+        url: "https://apipolysmash.herokuapp.com/api/store",
         method: "post",
         mode: "no-cors",
         headers: headersList,

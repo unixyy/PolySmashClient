@@ -37,7 +37,7 @@ function Game() {
     };
 
     let reqOptions = {
-      url: "http://localhost:8000/api/choices/",
+      url: "https://apipolysmash.herokuapp.com/api/choices/",
       method: "put",
       mode: "no-cors",
       headers: headersList,
@@ -55,7 +55,7 @@ function Game() {
       Autorization: localStorage.getItem("token"),
     };
     let reqOptions = {
-      url: "http://localhost:8000/api/users/",
+      url: "https://apipolysmash.herokuapp.com/api/users/",
       method: "put",
       mode: "no-cors",
       headers: headersList,
@@ -74,7 +74,7 @@ function Game() {
     };
 
     let reqOptions = {
-      url: "http://localhost:8000/api/choices/ask",
+      url: "https://apipolysmash.herokuapp.com/api/choices/ask",
       method: "post",
       mode: "no-cors",
       headers: headersList,
@@ -100,7 +100,7 @@ function Game() {
     };
 
     let reqOptions = {
-      url: "http://localhost:8000/api/choices/",
+      url: "https://apipolysmash.herokuapp.com/api/choices/",
       method: "GET",
       mode: "no-cors",
       headers: headersList,
@@ -124,7 +124,8 @@ function Game() {
         onClick={setPoints}
       >
         save my points !
-      </Button><br/>
+      </Button>
+      <br />
       <Typography variant="overline">min. 7 is required</Typography>
       <Container maxWidth="lg" class="container test">
         <Card sx={{ maxWidth: 345 }}>
