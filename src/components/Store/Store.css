@@ -1,0 +1,15 @@
+.formdiv {
+    margin-top:5vh;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    flex-direction: row;
+}
+
+
+.storediv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
