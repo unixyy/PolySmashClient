@@ -2,7 +2,7 @@
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import "./Suggestions.css";
-import { Admin } from "../Middleware.js";
+import { Admin, isConnected } from "../Middleware.js";
 
 // import content from mui
 import { Container } from "@mui/material";
@@ -48,7 +48,7 @@ function Suggestions() {
   }, []);
 
   const addSug = async () => {
-    if (Admin()) {
+    if (isConnected()) {
       let headersList = {
         Accept: "*/*",
         Autorization: localStorage.getItem("token"),
@@ -66,7 +66,7 @@ function Suggestions() {
         window.location.reload();
       });
     } else {
-      alert("you do not have the right to do this....");
+      alert("you need to be connected to do this :D");
     }
   };
   return (
