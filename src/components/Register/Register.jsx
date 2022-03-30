@@ -34,9 +34,13 @@ function Register() {
       data: values,
     };
 
-    axios(reqOptions).then(function (response) {
-      window.location.reload();
-    });
+    try {
+      axios(reqOptions).then(function (response) {
+        window.location.reload();
+      });
+    } catch (error) {
+      alert("passwords are not the same");
+    }
   };
 
   const handleChange = (prop) => (event) => {
