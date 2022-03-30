@@ -35,9 +35,7 @@ function Register() {
     };
 
     axios(reqOptions).then(function (response) {
-      window.location.assign(
-        "https://62448739b41a4d2aa36180cf--gregarious-biscuit-b525ec.netlify.app/"
-      );
+      window.location.assign("https://polysmash.netlify.app");
     });
   };
 
