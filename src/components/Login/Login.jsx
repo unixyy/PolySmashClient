@@ -30,7 +30,7 @@ function Login() {
       Accept: "*/*",
     };
     let reqOptions = {
-      url: "http://apipolysmash.herokuapp.com/api/users/login",
+      url: "https://apipolysmash.herokuapp.com/api/users/login",
       method: "post",
       mode: "no-cors",
       headers: headersList,
