@@ -34,13 +34,13 @@ function Register() {
       data: values,
     };
 
-    try {
-      axios(reqOptions).then(function (response) {
+    axios(reqOptions)
+      .then(function (response) {
         window.location.reload();
+      })
+      .catch(function (error) {
+        alert("passwords must match");
       });
-    } catch (error) {
-      alert("passwords are not the same");
-    }
   };
 
   const handleChange = (prop) => (event) => {
