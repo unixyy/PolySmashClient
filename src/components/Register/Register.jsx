@@ -39,7 +39,7 @@ function Register() {
         window.location.reload();
       })
       .catch(function (error) {
-        alert("passwords must match");
+        alert("you must complete the registration / passwords must match");
       });
   };
 
