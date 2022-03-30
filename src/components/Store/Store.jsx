@@ -82,7 +82,9 @@ function Store() {
       };
 
       axios(reqOptions).then(function (response) {
-        window.location.reload();
+        window.location.assign(
+          "https://62448739b41a4d2aa36180cf--gregarious-biscuit-b525ec.netlify.app/"
+        );
       });
     } else {
       alert("you need more points to buy this !");
@@ -104,7 +106,9 @@ function Store() {
       };
 
       axios(reqOptions).then(function (response) {
-        window.location.reload();
+        window.location.assign(
+          "https://62448739b41a4d2aa36180cf--gregarious-biscuit-b525ec.netlify.app/"
+        );
       });
     } else {
       alert("you do not have the right to do this....");

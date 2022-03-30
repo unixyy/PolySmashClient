@@ -60,7 +60,9 @@ function Suggestions() {
 
       axios(reqOptions).then(function (response) {
         console.log("something added");
-        window.location.reload();
+        window.location.assign(
+          "https://62448739b41a4d2aa36180cf--gregarious-biscuit-b525ec.netlify.app/"
+        );
       });
     } else {
       alert("you need to be connected to do this :D");

@@ -39,7 +39,9 @@ function Login() {
 
     axios(reqOptions).then(function (response) {
       localStorage.setItem("token", response.data.token);
-      window.location.reload();
+      window.location.assign(
+        "https://62448739b41a4d2aa36180cf--gregarious-biscuit-b525ec.netlify.app/"
+      );
     });
   };
 
