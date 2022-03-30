@@ -1,5 +1,5 @@
 import "./Login.css";
-import { useEffect, useState, useRef } from "react";
+import { useState } from "react";
 import React from "react";
 import axios from "axios";
 
@@ -30,7 +30,7 @@ function Login() {
       Accept: "*/*",
     };
     let reqOptions = {
-      url: "https://apipolysmash.herokuapp.com/api/users/login",
+      url: "http://apipolysmash.herokuapp.com/api/users/login",
       method: "post",
       mode: "no-cors",
       headers: headersList,

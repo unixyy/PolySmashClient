@@ -1,14 +1,11 @@
 // import useful stuff
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Suggestions.css";
-import { Admin, isConnected } from "../Middleware.js";
+import { isConnected } from "../Middleware.js";
 
 // import content from mui
-import { Container } from "@mui/material";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
+
 import Typography from "@mui/material/Typography";
 import FormControl from "@mui/material/FormControl";
 import TextField from "@mui/material/TextField";

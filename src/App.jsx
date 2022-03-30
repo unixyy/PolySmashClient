@@ -1,8 +1,6 @@
 import React from "react";
 import "./App.css";
 import { makeStyles } from "@material-ui/core/styles";
-import axios from "axios";
-import { useEffect, useState, useRef } from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -16,24 +14,6 @@ import Suggestions from "./components/Suggestions/Suggestions";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 import Store from "./components/Store/Store";
-
-const useStyles = makeStyles({
-  button: {
-    background: "linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)",
-    borderRadius: 3,
-    border: 0,
-    color: "white",
-    height: 48,
-    padding: "0 30px",
-  },
-  text: {
-    fontsize: "2em",
-    width: "100%",
-    height: 48,
-    color: "white",
-    display: "inline-block",
-  },
-});
 
 function App({ list }) {
   return (

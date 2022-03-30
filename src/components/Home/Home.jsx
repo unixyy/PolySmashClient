@@ -1,5 +1,5 @@
 import "./Home.css";
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 function Home() {
   return (
