@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import axios from "axios";
-import { useEffect, useState, useRef } from "react";
 
 import './index.css';
 import App from './App';
