@@ -60,7 +60,7 @@ function Suggestions() {
 
       axios(reqOptions).then(function (response) {
         console.log("something added");
-        window.location.assign("https://polysmash.netlify.app");
+        window.location.reload();
       });
     } else {
       alert("you need to be connected to do this :D");

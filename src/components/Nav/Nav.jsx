@@ -67,7 +67,7 @@ function Navbar() {
   const handleDisconnectCloseUserMenu = () => {
     localStorage.setItem("token", "");
     setAnchorElUser(null);
-    window.location.assign("https://polysmash.netlify.app");
+    window.location.reload();
   };
 
   return (

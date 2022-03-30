@@ -39,7 +39,7 @@ function Login() {
 
     axios(reqOptions).then(function (response) {
       localStorage.setItem("token", response.data.token);
-      window.location.assign("https://polysmash.netlify.app");
+      window.location.reload();
     });
   };
 

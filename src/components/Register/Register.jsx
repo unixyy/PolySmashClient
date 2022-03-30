@@ -35,7 +35,7 @@ function Register() {
     };
 
     axios(reqOptions).then(function (response) {
-      window.location.assign("https://polysmash.netlify.app");
+      window.location.reload();
     });
   };
 

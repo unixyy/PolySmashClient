@@ -37,7 +37,7 @@ function News() {
       };
 
       axios(reqOptions).then(function (response) {
-        window.location.assign("https://polysmash.netlify.app");
+        window.location.reload();
       });
     } else {
       alert("you do not have the right to do this....");
